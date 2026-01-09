@@ -1,0 +1,46 @@
+# Drop D Power Chord Riff
+# Demonstrates Drop D tuning support
+# Tune your low E string down to D!
+
+title: Drop D Power Chords
+artist: Metal Practice
+bpm: 120
+tuning: drop-d   # Options: standard, drop-d, half-step-down, full-step-down, 5-string
+                 # Or custom: "G2,D2,A1,D1"
+
+notes:
+  # Drop D makes power chords easy - one finger across lowest 3 strings
+  # D power chord (open)
+  - { beat: 0, string: 3, fret: 0 }    # D (dropped from E)
+  - { beat: 1, string: 3, fret: 0 }
+  - { beat: 2, string: 3, fret: 0 }
+  - { beat: 3, string: 3, fret: 0 }
+
+  # E power chord (2nd fret on dropped D string)
+  - { beat: 4, string: 3, fret: 2 }    # E
+  - { beat: 5, string: 3, fret: 2 }
+  - { beat: 6, string: 3, fret: 2 }
+  - { beat: 7, string: 3, fret: 2 }
+
+  # F power chord
+  - { beat: 8, string: 3, fret: 3 }    # F
+  - { beat: 9, string: 3, fret: 3 }
+  - { beat: 10, string: 3, fret: 3 }
+  - { beat: 11, string: 3, fret: 3 }
+
+  # G power chord
+  - { beat: 12, string: 3, fret: 5 }   # G
+  - { beat: 13, string: 3, fret: 5 }
+  - { beat: 14, string: 3, fret: 5 }
+  - { beat: 15, string: 3, fret: 5 }
+
+  # Classic metal riff pattern
+  - { beat: 16, string: 3, fret: 0 }   # D
+  - { beat: 17, string: 3, fret: 0 }
+  - { beat: 18, string: 3, fret: 3 }   # F
+  - { beat: 19, string: 3, fret: 5 }   # G
+
+  - { beat: 20, string: 3, fret: 3 }   # F
+  - { beat: 21, string: 3, fret: 0 }   # D
+  - { beat: 22, string: 3, fret: 0 }   # D
+  - { beat: 23, string: 3, fret: 0 }   # D (hold)

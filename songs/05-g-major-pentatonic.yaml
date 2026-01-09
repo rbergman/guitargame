@@ -1,0 +1,28 @@
+# G Major Pentatonic Scale
+# Essential for pop, country, and major key songs
+# Box pattern starting at 3rd fret
+
+title: G Major Pentatonic
+artist: Scale Practice
+bpm: 80
+
+notes:
+  # Ascending
+  - { beat: 0, string: 3, fret: 3 }   # G (root)
+  - { beat: 1, string: 3, fret: 5 }   # A
+  - { beat: 2, string: 3, fret: 7 }   # B
+  - { beat: 3, string: 2, fret: 5 }   # D
+  - { beat: 4, string: 2, fret: 7 }   # E
+  - { beat: 5, string: 1, fret: 5 }   # G
+  - { beat: 6, string: 1, fret: 7 }   # A
+  - { beat: 7, string: 0, fret: 4 }   # B
+
+  # Descending
+  - { beat: 9, string: 0, fret: 4 }   # B
+  - { beat: 10, string: 1, fret: 7 }  # A
+  - { beat: 11, string: 1, fret: 5 }  # G
+  - { beat: 12, string: 2, fret: 7 }  # E
+  - { beat: 13, string: 2, fret: 5 }  # D
+  - { beat: 14, string: 3, fret: 7 }  # B
+  - { beat: 15, string: 3, fret: 5 }  # A
+  - { beat: 16, string: 3, fret: 3 }  # G (root)

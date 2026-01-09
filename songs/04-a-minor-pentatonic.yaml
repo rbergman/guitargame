@@ -1,0 +1,28 @@
+# A Minor Pentatonic Scale
+# Essential scale for rock, blues, and metal
+# Box pattern starting at 5th fret
+
+title: A Minor Pentatonic
+artist: Scale Practice
+bpm: 80
+
+notes:
+  # Ascending
+  - { beat: 0, string: 3, fret: 5 }   # A (root)
+  - { beat: 1, string: 3, fret: 8 }   # C
+  - { beat: 2, string: 2, fret: 5 }   # D
+  - { beat: 3, string: 2, fret: 7 }   # E
+  - { beat: 4, string: 1, fret: 5 }   # G
+  - { beat: 5, string: 1, fret: 7 }   # A
+  - { beat: 6, string: 0, fret: 5 }   # C
+  - { beat: 7, string: 0, fret: 7 }   # D
+
+  # Descending
+  - { beat: 9, string: 0, fret: 7 }   # D
+  - { beat: 10, string: 0, fret: 5 }  # C
+  - { beat: 11, string: 1, fret: 7 }  # A
+  - { beat: 12, string: 1, fret: 5 }  # G
+  - { beat: 13, string: 2, fret: 7 }  # E
+  - { beat: 14, string: 2, fret: 5 }  # D
+  - { beat: 15, string: 3, fret: 8 }  # C
+  - { beat: 16, string: 3, fret: 5 }  # A (root)

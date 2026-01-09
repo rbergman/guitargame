@@ -1,0 +1,56 @@
+# Spider Walk (Chromatic Exercise)
+# Builds finger independence with 1-2-3-4 pattern across all strings
+# Keep each finger close to the fretboard
+
+title: Spider Walk (Chromatic)
+artist: Finger Independence
+bpm: 70
+
+notes:
+  # E string - frets 1,2,3,4
+  - { beat: 0, string: 3, fret: 1 }
+  - { beat: 1, string: 3, fret: 2 }
+  - { beat: 2, string: 3, fret: 3 }
+  - { beat: 3, string: 3, fret: 4 }
+
+  # A string - frets 1,2,3,4
+  - { beat: 4, string: 2, fret: 1 }
+  - { beat: 5, string: 2, fret: 2 }
+  - { beat: 6, string: 2, fret: 3 }
+  - { beat: 7, string: 2, fret: 4 }
+
+  # D string - frets 1,2,3,4
+  - { beat: 8, string: 1, fret: 1 }
+  - { beat: 9, string: 1, fret: 2 }
+  - { beat: 10, string: 1, fret: 3 }
+  - { beat: 11, string: 1, fret: 4 }
+
+  # G string - frets 1,2,3,4
+  - { beat: 12, string: 0, fret: 1 }
+  - { beat: 13, string: 0, fret: 2 }
+  - { beat: 14, string: 0, fret: 3 }
+  - { beat: 15, string: 0, fret: 4 }
+
+  # Now descend: G string 4,3,2,1
+  - { beat: 16, string: 0, fret: 4 }
+  - { beat: 17, string: 0, fret: 3 }
+  - { beat: 18, string: 0, fret: 2 }
+  - { beat: 19, string: 0, fret: 1 }
+
+  # D string 4,3,2,1
+  - { beat: 20, string: 1, fret: 4 }
+  - { beat: 21, string: 1, fret: 3 }
+  - { beat: 22, string: 1, fret: 2 }
+  - { beat: 23, string: 1, fret: 1 }
+
+  # A string 4,3,2,1
+  - { beat: 24, string: 2, fret: 4 }
+  - { beat: 25, string: 2, fret: 3 }
+  - { beat: 26, string: 2, fret: 2 }
+  - { beat: 27, string: 2, fret: 1 }
+
+  # E string 4,3,2,1
+  - { beat: 28, string: 3, fret: 4 }
+  - { beat: 29, string: 3, fret: 3 }
+  - { beat: 30, string: 3, fret: 2 }
+  - { beat: 31, string: 3, fret: 1 }

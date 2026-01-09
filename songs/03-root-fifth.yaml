@@ -1,0 +1,44 @@
+# Root-Fifth Pattern
+# The fundamental bass groove used in rock, pop, and country
+# Pattern: Root (beats 1-2), Fifth (beats 3-4)
+
+title: Root-Fifth Pattern
+artist: Bass Fundamentals
+bpm: 90
+
+notes:
+  # E root, B fifth (E string open, A string 2nd fret)
+  - { beat: 0, string: 3, fret: 0 }   # E root
+  - { beat: 1, string: 3, fret: 0 }   # E root
+  - { beat: 2, string: 2, fret: 2 }   # B fifth
+  - { beat: 3, string: 2, fret: 2 }   # B fifth
+
+  # A root, E fifth
+  - { beat: 4, string: 2, fret: 0 }   # A root
+  - { beat: 5, string: 2, fret: 0 }   # A root
+  - { beat: 6, string: 1, fret: 2 }   # E fifth
+  - { beat: 7, string: 1, fret: 2 }   # E fifth
+
+  # D root, A fifth
+  - { beat: 8, string: 1, fret: 0 }   # D root
+  - { beat: 9, string: 1, fret: 0 }   # D root
+  - { beat: 10, string: 0, fret: 2 }  # A fifth
+  - { beat: 11, string: 0, fret: 2 }  # A fifth
+
+  # G root, D fifth
+  - { beat: 12, string: 3, fret: 3 }  # G root
+  - { beat: 13, string: 3, fret: 3 }  # G root
+  - { beat: 14, string: 2, fret: 5 }  # D fifth
+  - { beat: 15, string: 2, fret: 5 }  # D fifth
+
+  # C root, G fifth
+  - { beat: 16, string: 2, fret: 3 }  # C root
+  - { beat: 17, string: 2, fret: 3 }  # C root
+  - { beat: 18, string: 1, fret: 5 }  # G fifth
+  - { beat: 19, string: 1, fret: 5 }  # G fifth
+
+  # A root (higher position), E fifth
+  - { beat: 20, string: 3, fret: 5 }  # A root
+  - { beat: 21, string: 3, fret: 5 }  # A root
+  - { beat: 22, string: 2, fret: 7 }  # E fifth
+  - { beat: 23, string: 2, fret: 7 }  # E fifth

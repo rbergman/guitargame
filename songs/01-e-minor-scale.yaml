@@ -1,0 +1,30 @@
+# E Minor Scale Practice
+# A great beginner exercise for learning the E minor scale
+# Ascending and descending pattern
+
+title: E Minor Scale
+artist: Practice
+bpm: 80
+
+notes:
+  # Ascending - E string
+  - { beat: 0, string: 3, fret: 0 }   # E (open)
+  - { beat: 1, string: 3, fret: 2 }   # F#
+  - { beat: 2, string: 3, fret: 3 }   # G
+  - { beat: 3, string: 3, fret: 5 }   # A
+  - { beat: 4, string: 3, fret: 7 }   # B
+
+  # Continue on A string
+  - { beat: 5, string: 2, fret: 3 }   # C
+  - { beat: 6, string: 2, fret: 5 }   # D
+  - { beat: 7, string: 2, fret: 7 }   # E (octave)
+
+  # Descending
+  - { beat: 9, string: 2, fret: 7 }   # E
+  - { beat: 10, string: 2, fret: 5 }  # D
+  - { beat: 11, string: 2, fret: 3 }  # C
+  - { beat: 12, string: 3, fret: 7 }  # B
+  - { beat: 13, string: 3, fret: 5 }  # A
+  - { beat: 14, string: 3, fret: 3 }  # G
+  - { beat: 15, string: 3, fret: 2 }  # F#
+  - { beat: 16, string: 3, fret: 0 }  # E (root)

@@ -1,0 +1,29 @@
+# Simple Rock Riff
+# A basic rock pattern using open strings and power chord shapes
+# Great for timing practice
+
+title: Simple Rock Riff
+artist: Rock Practice
+bpm: 100
+
+notes:
+  # First phrase - E string based
+  - { beat: 0, string: 3, fret: 0 }   # E
+  - { beat: 1, string: 3, fret: 0 }   # E
+  - { beat: 2, string: 3, fret: 3 }   # G
+  - { beat: 3, string: 3, fret: 5 }   # A
+
+  # Second phrase - A string based
+  - { beat: 4, string: 2, fret: 0 }   # A
+  - { beat: 5, string: 2, fret: 0 }   # A
+  - { beat: 6, string: 2, fret: 3 }   # C
+  - { beat: 7, string: 2, fret: 5 }   # D
+
+  # Variation
+  - { beat: 8, string: 3, fret: 0 }   # E
+  - { beat: 9, string: 3, fret: 3 }   # G
+  - { beat: 10, string: 3, fret: 5 }  # A
+  - { beat: 11, string: 3, fret: 3 }  # G
+
+  # End on root
+  - { beat: 12, string: 3, fret: 0 }  # E (hold)

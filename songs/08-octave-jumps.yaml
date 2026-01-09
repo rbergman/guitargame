@@ -1,0 +1,41 @@
+# Octave Jumps Exercise
+# Develops hand position shifts and octave patterns
+# Octave shape: 2 strings up, 2 frets up
+
+title: Octave Jumps
+artist: Position Shifting
+bpm: 85
+
+notes:
+  # E octaves (E string open -> D string 2nd fret)
+  - { beat: 0, string: 3, fret: 0 }   # E (low)
+  - { beat: 1, string: 1, fret: 2 }   # E (high)
+  - { beat: 2, string: 3, fret: 0 }   # E (low)
+  - { beat: 3, string: 1, fret: 2 }   # E (high)
+
+  # G octaves
+  - { beat: 4, string: 3, fret: 3 }   # G (low)
+  - { beat: 5, string: 1, fret: 5 }   # G (high)
+  - { beat: 6, string: 3, fret: 3 }   # G (low)
+  - { beat: 7, string: 1, fret: 5 }   # G (high)
+
+  # A octaves (on E string)
+  - { beat: 8, string: 3, fret: 5 }   # A (low)
+  - { beat: 9, string: 1, fret: 7 }   # A (high)
+  - { beat: 10, string: 3, fret: 5 }  # A (low)
+  - { beat: 11, string: 1, fret: 7 }  # A (high)
+
+  # A octaves (on A string)
+  - { beat: 12, string: 2, fret: 0 }  # A (low)
+  - { beat: 13, string: 0, fret: 2 }  # A (high)
+  - { beat: 14, string: 2, fret: 0 }  # A (low)
+  - { beat: 15, string: 0, fret: 2 }  # A (high)
+
+  # D octaves
+  - { beat: 16, string: 2, fret: 5 }  # D (low)
+  - { beat: 17, string: 0, fret: 7 }  # D (high)
+  - { beat: 18, string: 2, fret: 5 }  # D (low)
+  - { beat: 19, string: 0, fret: 7 }  # D (high)
+
+  # End on E
+  - { beat: 20, string: 3, fret: 0 }  # E (hold)

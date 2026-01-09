@@ -1,0 +1,38 @@
+# Walking Bass ii-V-I
+# Jazz fundamental progression in C major
+# Dm7 - G7 - Cmaj7
+
+title: Walking Bass ii-V-I
+artist: Jazz Fundamentals
+bpm: 100
+
+notes:
+  # Dm7 (bars 1-2)
+  - { beat: 0, string: 2, fret: 5 }   # D (root)
+  - { beat: 1, string: 2, fret: 7 }   # E
+  - { beat: 2, string: 1, fret: 5 }   # G (approach)
+  - { beat: 3, string: 2, fret: 7 }   # E
+  - { beat: 4, string: 2, fret: 5 }   # D
+  - { beat: 5, string: 1, fret: 4 }   # F#
+  - { beat: 6, string: 1, fret: 5 }   # G
+  - { beat: 7, string: 2, fret: 2 }   # B (approach to G)
+
+  # G7 (bars 3-4)
+  - { beat: 8, string: 3, fret: 3 }   # G (root)
+  - { beat: 9, string: 3, fret: 5 }   # A
+  - { beat: 10, string: 2, fret: 2 }  # B
+  - { beat: 11, string: 2, fret: 3 }  # C
+  - { beat: 12, string: 2, fret: 5 }  # D
+  - { beat: 13, string: 1, fret: 4 }  # F# (leading tone)
+  - { beat: 14, string: 3, fret: 3 }  # G
+  - { beat: 15, string: 2, fret: 2 }  # B (approach to C)
+
+  # Cmaj7 (bars 5-6 - resolution)
+  - { beat: 16, string: 2, fret: 3 }  # C (root)
+  - { beat: 17, string: 2, fret: 5 }  # D
+  - { beat: 18, string: 1, fret: 2 }  # E
+  - { beat: 19, string: 1, fret: 5 }  # G
+  - { beat: 20, string: 2, fret: 3 }  # C
+  - { beat: 21, string: 1, fret: 4 }  # F#
+  - { beat: 22, string: 1, fret: 5 }  # G
+  - { beat: 23, string: 2, fret: 3 }  # C (hold)

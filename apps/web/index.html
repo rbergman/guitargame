@@ -3,10 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guitar Game</title>
+    <title>Bass Practice Game</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="bg-bg-deep text-text-primary min-h-screen">
+    <!-- Alpine.js App Shell -->
+    <div id="app" x-data="{ state: 'MENU', score: 0, combo: 0, detectedNote: null }">
+
+      <!-- MENU State -->
+      <section x-show="state === 'MENU'" class="flex flex-col items-center justify-center min-h-screen">
+        <h1 class="font-mono text-4xl text-amber mb-8">Bass Practice</h1>
+        <p class="text-text-muted mb-8">Select an exercise to begin</p>
+        <!-- Exercise menu will be added here -->
+        <div id="exercise-menu" class="w-full max-w-md">
+          <!-- Placeholder for exercise list component -->
+        </div>
+      </section>
+
+      <!-- PRE_START State -->
+      <section x-show="state === 'PRE_START'" class="flex flex-col items-center justify-center min-h-screen">
+        <h2 class="font-mono text-2xl text-amber mb-4">Get Ready</h2>
+        <p class="text-text-muted text-lg">Play any note to start...</p>
+      </section>
+
+      <!-- PLAYING State -->
+      <section x-show="state === 'PLAYING'" class="flex flex-col h-screen">
+        <!-- Header: Title + Score + Combo (40px) -->
+        <header class="h-10 flex items-center justify-between px-4 bg-bg-surface border-b border-bg-elevated">
+          <span class="font-mono text-amber" id="song-title">Exercise</span>
+          <div class="flex gap-6 font-mono">
+            <span class="text-text-primary">Score: <span x-text="score" class="text-amber-bright">0</span></span>
+            <span class="text-text-primary">Combo: <span x-text="combo" class="text-amber-bright">0</span></span>
+          </div>
+        </header>
+
+        <!-- Tab Area: Canvas (280px) -->
+        <div class="flex-1 flex items-center justify-center bg-bg-deep">
+          <canvas
+            id="tab-canvas"
+            width="1000"
+            height="280"
+            class="bg-bg-surface border border-bg-elevated"
+          ></canvas>
+        </div>
+
+        <!-- HUD Overlay for hit feedback -->
+        <div id="hud-overlay" class="pointer-events-none fixed inset-0 z-10">
+          <!-- Floating text and combo effects render here -->
+        </div>
+
+        <!-- Pitch Display: Detected Note (40px) -->
+        <footer class="h-10 flex items-center justify-center bg-bg-surface border-t border-bg-elevated">
+          <div class="font-mono text-text-muted">
+            <span x-show="detectedNote">
+              Playing: <span x-text="detectedNote?.note" class="text-amber"></span>
+              <span x-text="detectedNote?.frequency?.toFixed(1)" class="text-text-muted"></span> Hz
+            </span>
+            <span x-show="!detectedNote" class="text-text-muted">Listening...</span>
+          </div>
+        </footer>
+      </section>
+
+      <!-- RESULTS State -->
+      <section x-show="state === 'RESULTS'" class="flex flex-col items-center justify-center min-h-screen">
+        <h2 class="font-mono text-3xl text-amber mb-4">Results</h2>
+        <div class="text-center">
+          <p class="text-6xl font-mono text-amber-bright mb-4" x-text="score">0</p>
+          <p class="text-text-muted mb-8">Final Score</p>
+        </div>
+        <p class="text-text-muted">Play any note to return to menu...</p>
+      </section>
+
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

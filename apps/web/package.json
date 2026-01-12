@@ -21,6 +21,7 @@
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.0",
     "@tailwindcss/vite": "^4.0.0",
+    "@types/alpinejs": "^3.13.11",
     "husky": "^9.0.0",
     "pitchfinder": "^2.3.4",
     "tailwindcss": "^4.0.0",

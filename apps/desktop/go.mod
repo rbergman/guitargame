@@ -1,4 +1,4 @@
-module guitargame
+module guitargame/apps/desktop
 
 go 1.25.5
 

@@ -1,0 +1,22 @@
+# Desktop App Build System (Go/Gioui)
+# Usage: just desktop <recipe>
+# Note: This is the reference implementation
+
+default:
+    @just --list
+
+# Build for current platform
+build:
+    go build -o bin/guitargame .
+
+# Run the app
+run: build
+    ./bin/guitargame
+
+# Run tests
+test:
+    go test -race ./...
+
+# Clean build artifacts
+clean:
+    rm -rf bin/

@@ -16,10 +16,10 @@ import (
 	"gioui.org/unit"
 	"gioui.org/widget/material"
 
-	"guitargame/internal/audio"
-	"guitargame/internal/game"
-	"guitargame/internal/render"
-	"guitargame/internal/song"
+	"guitargame/apps/desktop/internal/audio"
+	"guitargame/apps/desktop/internal/game"
+	"guitargame/apps/desktop/internal/render"
+	"guitargame/apps/desktop/internal/song"
 )
 
 const (

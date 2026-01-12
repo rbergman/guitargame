@@ -14,7 +14,7 @@ import (
 	"gioui.org/unit"
 	"gioui.org/widget/material"
 
-	"guitargame/internal/song"
+	"guitargame/apps/desktop/internal/song"
 )
 
 // TabRenderer renders scrolling bass tablature

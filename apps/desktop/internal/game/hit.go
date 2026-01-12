@@ -3,8 +3,8 @@ package game
 import (
 	"math"
 
-	"guitargame/internal/audio"
-	"guitargame/internal/song"
+	"guitargame/apps/desktop/internal/audio"
+	"guitargame/apps/desktop/internal/song"
 )
 
 // Timing windows in seconds

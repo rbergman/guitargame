@@ -13,6 +13,7 @@ guitargame
 
 # Dependency directories
 vendor/
+node_modules/
 
 # IDE
 .idea/

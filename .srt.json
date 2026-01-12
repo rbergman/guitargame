@@ -1,0 +1,20 @@
+{
+  "network": {
+    "allowedDomains": [
+      "api.anthropic.com",
+      "context7.com", "*.context7.com", "api.upstash.com",
+      "api.brightdata.com", "*.brightdata.com",
+      "registry.npmjs.org", "*.npmjs.org",
+      "github.com", "*.github.com"
+    ]
+  },
+  "filesystem": {
+    "denyRead": ["~/.ssh", "~/.gnupg", "~/.aws/credentials"],
+    "allowWrite": [
+      ".",
+      "~/.npm",
+      "~/Library/Caches/claude-cli-nodejs",
+      "/tmp"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+# Web App Build System
+# Usage: just web <recipe>
+
+default:
+    @just --list
+
+# === Setup ===
+
+# Install dependencies
+setup:
+    npm ci
+
+# === Quality Gates ===
+
+# Full quality check (pre-commit)
+check: typecheck lint test
+    @echo "Web checks passed"
+
+# Quick check (dev iteration)
+check-quick: typecheck lint
+    @echo "Quick checks passed"
+
+# TypeScript type checking
+typecheck:
+    npx tsc --noEmit
+
+# ESLint with auto-fix
+lint:
+    npx eslint src/ --fix
+
+# Run tests
+test:
+    npx vitest run
+
+# === Development ===
+
+# Start dev server
+dev:
+    npx vite
+
+# Production build
+build:
+    npx vite build
+
+# Preview production build
+preview:
+    npx vite preview
+
+# === Maintenance ===
+
+# Remove build artifacts
+clean:
+    rm -rf dist node_modules/.cache

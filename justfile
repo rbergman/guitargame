@@ -34,20 +34,18 @@ setup:
 clean: web::clean
     @echo "Cleaned"
 
-# === Claude Autonomous Recipes ===
+# === Claude Recipes ===
 
-# Run Claude interactively
+# Run Claude interactively (no sandbox)
 ai:
     claude
 
-# Run Claude autonomously (sandboxed with network access)
-ai-auto prompt:
-    srt -s .srt.json -c 'claude --dangerously-skip-permissions \
-      --no-session-persistence \
-      -p "{{prompt}}"'
+# Run Claude interactively with sandbox (dangerous mode, but filesystem/network restricted)
+ai-sandboxed:
+    srt -s .srt.json -c 'claude --dangerously-skip-permissions'
 
-# Run Claude autonomously with full MCP access (Context7, Brightdata)
-ai-auto-mcp prompt:
+# Run Claude autonomously (sandboxed, non-interactive)
+ai-auto prompt:
     srt -s .srt.json -c 'claude --dangerously-skip-permissions \
       --no-session-persistence \
       -p "{{prompt}}"'

@@ -6,13 +6,17 @@
       "api.brightdata.com", "*.brightdata.com",
       "registry.npmjs.org", "*.npmjs.org",
       "github.com", "*.github.com"
-    ]
+    ],
+    "deniedDomains": []
   },
   "filesystem": {
     "denyRead": ["~/.ssh", "~/.gnupg", "~/.aws/credentials"],
+    "denyWrite": ["~/.ssh", "~/.gnupg", "~/.aws"],
     "allowWrite": [
       ".",
       "~/.npm",
+      "~/.claude.json",
+      "~/.claude",
       "~/Library/Caches/claude-cli-nodejs",
       "/tmp"
     ]
